@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<table border="1">
+    <tr th:each="hd: ${hdList}">
+        <td th:text="${hd.bioGuideID}" />
+        <td th:text="${hd.office}" />
+        <td th:text="${hd.category}" />
+        <td th:text="${hd.payee}" />
+        <td th:text="${hd.startDate}" />
+        <td th:text="${hd.endDate}" />
+        <td th:text="${hd.purpose}" />
+        <td th:text="${hd.amount}" />
+        <td th:text="${hd.year}" />
+
+    </tr>
+</table>
+</body>
+</html>
